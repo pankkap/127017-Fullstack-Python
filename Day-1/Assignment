@@ -1,0 +1,16 @@
+1. Create an HTML file with following Tags
+    - Heading
+    - Paragraph
+    - Link
+    - Image
+    - Table: change all row with pink background color 
+    - List
+
+2. Make the Paragraph red and center using inline style
+
+3. Make the Heading with background black and text white using Internal styling
+
+4. You have to change font-style "arial" using External styling
+
+5. change width and height of image using External Styling
+
