@@ -1,0 +1,88 @@
+/* Thumb Rule : Default spaces */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, pink, deeppink);
+  color: white;
+  font-family: arial;
+  min-height: 100vh;
+}
+header,
+form {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+header {
+  font-size: 40px;
+}
+input,
+form button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  background-color: white;
+}
+form button {
+  color: blueviolet;
+  background-color: white;
+  cursor: pointer;
+  /* changes into hand icon on cursor */
+}
+form button:hover {
+  background-color: rgb(243, 239, 21);
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  list-style: none;
+  min-width: 25%;
+}
+
+.todo {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.todo li {
+  flex: 1;
+  padding-left: 10px;
+}
+.cmplt-btn,
+.delete-btn {
+  background-color: skyblue;
+  color: white;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 16px;
+  cursor: pointer;
+}
+.delete-btn {
+  background-color: darkblue;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completion {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

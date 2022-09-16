@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is Heading</h1>
+    <p id="para1" class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum in eius
+      est excepturi repellat ad consequuntur cumque ab magnam reprehenderit.
+    </p>
+    <p id="para2" class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum in eius
+      est excepturi repellat ad consequuntur cumque ab magnam reprehenderit.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quae
+      debitis quis totam consectetur ea ducimus. Molestias eaque assumenda
+      libero autem est consequatur deserunt non, beatae expedita quisquam, quod
+      quibusdam. Alias deleniti libero odit soluta distinctio ut. Necessitatibus
+      molestias nisi repudiandae fugiat ipsam beatae? Deleniti debitis similique
+      ipsum porro dolores.
+    </p>
+    <h1>This is Heading</h1>
+    <input type="text" />
+    <input type="passowrd" />
+    <button id="btn">Click Me</button>
+
+    <script>
+      function task1() {
+        var x = document.querySelector("h1");
+        x.style.color = "red";
+        x.style.backgroundColor = "pink";
+        x.style.textAlign = "center";
+      }
+
+      function task2() {
+        var x = document.querySelector("p");
+        x.style.color = "red";
+        x.style.textAlign = "center";
+      }
+
+      var btn = document.getElementById("btn");
+      //   btn.onclick = task1;
+
+      var para2 = document.getElementsByClassName("para")[1];
+
+      // anonymous function: function with no name
+      para2.onmouseover = function () {
+        para2.style.color = "blue";
+      };
+      para2.onmouseleave = function () {
+        para2.style.color = "red";
+      };
+
+      window.onload = alert("Bonjour les amis");
+
+      // You can add as well as REMOVE events using this method
+      // function should not be anonymous
+      btn.addEventListener("click", task1);
+      btn.removeEventListener("click", task1);
+
+
+
+    </script>
+  </body>
+</html>
+
+<!-- 1. inline Event Handling
+2. by binding  the events
+3. EventListeners -->

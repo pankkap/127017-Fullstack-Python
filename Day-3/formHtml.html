@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form for Getting User Data</title>
+    <style>
+      input[type="password"] {
+        background-color: pink;
+      }
+      input::placeholder {
+        color: blue;
+      }
+      
+      .newField {
+        margin: 20px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="newField">
+          <label>Name: </label>
+          <input type="text" placeholder="Enter your Name" />
+        </div>
+        <div class="newField">
+          <label>Password: </label>
+          <input type="password" placeholder="Enter your Password" />
+        </div>
+        <div class="newField">
+          <label>Mobile: </label>
+          <input type="number" placeholder="Enter your Mobile" />
+        </div>
+        <div class="newField">
+          <label>Enter ur Gender: </label>
+          <input type="radio" name="radioGroup" value="male" />Male
+          <input type="radio" name="radioGroup" value="female" />Female
+        </div>
+        <div class="newField">
+          <label>Choose Hobbies: </label>
+          <input type="checkbox" name="chkGroup" value="reading" />Reading
+          <input type="checkbox" name="chkGroup" value="writing" />Writing
+          <input type="checkbox" name="chkGroup" value="coding" />Coding
+        </div>
+
+        <div class="newField">
+          <label>Select Country: </label>
+          <select id="">
+            <option value="">Select from below</option>
+            <option value="india">India</option>
+            <option value="usa">US</option>
+            <option value="dubai">Dubai</option>
+            <option value="congo">Congo</option>
+          </select>
+        </div>
+        <div class="newField">
+          <label>Tell me about yourself: </label>
+          <textarea id="" cols="30" rows="3"></textarea>
+        </div>
+        <div class="newField">
+          <input type="submit" value="Create Account" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

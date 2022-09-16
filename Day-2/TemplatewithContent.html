@@ -12,19 +12,27 @@
         margin: 0;
         box-sizing: border-box;
       }
-    
+
       .banner {
         height: 100vh;
 
         /* background-color: rgb(14, 152, 206); */
-        
-        background-image: url("https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
-        
+
+        /* background-image: url("https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"); */
+
+        /* background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(121, 9, 111, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        ); */
+
+        background-image: url("https://i.makeagif.com/media/6-17-2016/75hx6R.gif");
+
         background-size: cover;
 
         background-repeat: no-repeat;
-        
-        
 
         display: flex;
         justify-content: center;
@@ -63,6 +71,11 @@
         height: 250px;
         /* background-color: orange; */
         border-radius: 50%;
+        transition: 1s;
+      }
+      .sec-1 .box:hover {
+        transform: scale(1.2);
+        box-shadow: 0px 0px 10px 10px blue;
       }
       .sec-3 {
         display: flex;
@@ -75,6 +88,10 @@
         background-color: red;
       }
 
+      .sec-3 .box1:hover {
+        transform: rotate(-5deg);
+        box-shadow: 0px 0px 10px 5px orange;
+      }
       .sec-2 {
         width: 100%;
         height: 80vh;
@@ -85,7 +102,14 @@
       .sec-2 .left {
         width: 48%;
         height: inherit;
-        background-color: rgba(0, 0, 0, 0.699);
+        /* background-color: rgba(0, 0, 0, 0.699); */
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(121, 9, 111, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
       }
       .sec-2 .right {
         width: 48%;
@@ -99,73 +123,59 @@
         background-color: cadetblue;
         margin-bottom: 10px;
       }
-      #box-1
-      {
-        background-image: url('https://i.pinimg.com/736x/89/90/48/899048ab0cc455154006fdb9676964b3.jpg');
-        
+      #box-1 {
+        background-image: url("https://i.pinimg.com/736x/89/90/48/899048ab0cc455154006fdb9676964b3.jpg");
+
         background-position: center;
         background-size: cover;
-
       }
-       #box-4
-      {
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1OvsGEpcT7_KmNKMPG_lJeK60YqXCLsS4TeGyuqegdpGrWLu5HPbGANf3JwZdk0GJho8&usqp=CAU');
-        
+      #box-4 {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1OvsGEpcT7_KmNKMPG_lJeK60YqXCLsS4TeGyuqegdpGrWLu5HPbGANf3JwZdk0GJho8&usqp=CAU");
+
         background-position: center;
         background-size: cover;
-
       }
-       #box-3
-      {
-        background-image: url('https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png');
-        
+      #box-3 {
+        background-image: url("https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png");
+
         background-position: center;
         background-size: cover;
-
       }
-       #box-2
-      {
-        background-image: url('https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/4_avatar-512.png');
-        
+      #box-2 {
+        background-image: url("https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/4_avatar-512.png");
+
         background-position: center;
         background-size: cover;
-
       }
 
-      .box1 img
-      {
+      .box1 img {
         width: 100%;
         height: 120px;
       }
-      .box1 h3
-      {
+      .box1 h3 {
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         color: white;
       }
-    
-      .box1 p
-      {
+
+      .box1 p {
         text-align: justify;
         font-family: Arial, Helvetica, sans-serif;
         color: white;
         padding: 10px 10px;
       }
-      .box1 a
-      {
+      .box1 a {
         text-decoration: none;
         display: block;
         background-color: yellow;
         padding: 7px 0px;
         text-align: center;
         border-radius: 10px;
-
       }
-       .box1 a:hover
-       {
+      .box1 a:hover {
         background-color: blue;
         color: yellow;
-       }
+      }
     </style>
   </head>
   <body>
@@ -202,12 +212,18 @@
       <h1><section>Section-3</section></h1>
       <div class="sec-3">
         <div class="box1">
-          <img src="https://techbeacon.com/sites/default/files/styles/social/public/html5-mobile-app-native-hybrid-pros-cons.jpg?itok=R3pMKIzh" alt="">
+          <img
+            src="https://techbeacon.com/sites/default/files/styles/social/public/html5-mobile-app-native-hybrid-pros-cons.jpg?itok=R3pMKIzh"
+            alt=""
+          />
           <h3>heading</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab minus eveniet voluptatibus inventore aliquid obcaecati officiis velit, harum ratione dicta.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab minus
+            eveniet voluptatibus inventore aliquid obcaecati officiis velit,
+            harum ratione dicta.
+          </p>
 
           <a href="#">Read More</a>
-
         </div>
         <div class="box1"></div>
         <div class="box1"></div>

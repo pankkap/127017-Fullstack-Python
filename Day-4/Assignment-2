@@ -1,0 +1,19 @@
+Task-1: change the Backgroung of Heading to Black and text white
+Task-2: change font family of paragraph-2
+Task-3: change font size of paragraph-1
+Task-4: chnage border of button to red
+Task-5: Remove both input elements
+
+<h1>This is Heading</h1>
+<p id="para1" class="para">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum in eius est
+  excepturi repellat ad consequuntur cumque ab magnam reprehenderit.
+</p>
+<p id="para2" class="para">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum in eius est
+  excepturi repellat ad consequuntur cumque ab magnam reprehenderit.
+</p>
+<button>Click Me</button>
+<h1>This is Heading</h1>
+<input type="text">
+<input type="passowrd">
