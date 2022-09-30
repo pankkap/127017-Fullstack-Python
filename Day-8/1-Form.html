@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms with Bootstrap</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container m-4">
+      <form class="col-md-6 offset-md-3 p-4 rounded shadow-lg">
+        <div class="mb-3">
+          <label for="emailfield" class="form-label">Email</label>
+          <input
+            type="email"
+            id="emailfield"
+            class="form-control"
+            placeholder="Enter Your Email Id"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password: </label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Enter Your Password"
+            disabled
+          />
+          <div class="form-text">
+            <p>
+              Password should be more than 8 character inclding Number, special
+              character and digits
+            </p>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Select City</label>
+            <select class="form-select" required>
+              <option value="" disabled selected>Select City from below</option>
+              <option value="delhi">Delhi</option>
+              <option value="kinchasa">Kinchasa</option>
+              <option value="jursey">Jursey</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Select Current Area</label>
+            <input list="newList" class="form-control" required />
+            <datalist id="newList">
+              <option value="Sector-10">Sector-10</option>
+              <option value="Sector-11">Sector-11</option>
+              <option value="Sector-12">Sector-12</option>
+            </datalist>
+          </div>
+
+          <div class="mb-3">
+            <textarea
+              required
+              class="form-control"
+              rows="3"
+              placeholder="Enter your Message"
+            ></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label class="me-3">Select Hobbies</label>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" value="reading" />
+              <label class="form-label">Reading</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" value="Writing" />
+              <label class="form-label">Writing</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="me-3">Select Gender</label>
+            <div class="form-check form-check-inline">
+              <input
+                type="radio"
+                name="gender"
+                class="form-check-input"
+                value="male"
+                checked
+              />
+              <label class="form-label">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="radio"
+                name="gender"
+                class="form-check-input"
+                value="female"
+              />
+              <label class="form-label">Female</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="mb-3">Payment Done ?</label>
+            <div class="form-check form-switch">
+              <input
+                type="radio"
+                name="switch"
+                class="form-check-input"
+                value="done"
+              />
+              <label class="form-label">Yes</label>
+            </div>
+            <div class="form-check form-switch">
+              <input
+                type="radio"
+                name="switch"
+                class="form-check-input"
+                value="not-done"
+              />
+              <label class="form-label">No</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="customRange2" class="form-label">Example range</label>
+            <input
+              type="range"
+              class="form-range"
+              min="0"
+              max="10"
+              step="1"
+              id="customRange2"
+            />
+          </div>
+
+          <div class="mb-3 form-floating">
+            <input type="text" class="form-control" placeholder="Enter name" />
+            <label class="form-lable">Username</label>
+          </div>
+
+          <div class="m-3 d-md-grid">
+            <button class="btn btn-primary">Register User</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      //reference
+      var email = document.getElementById("emailfield");
+      console.log(email);
+      var btn = document.querySelector(".btn");
+
+      btn.onclick = function () {
+        console.log("Btn clicked");
+        console.log(email.value);
+        if (email.value == "") {
+          email.classList.add("is-invalid");
+        }
+      };
+    </script>
+  </body>
+</html>

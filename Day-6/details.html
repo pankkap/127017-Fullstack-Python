@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>See Web Storage Data</title>
+  </head>
+  <body>
+    <h2>See Web Storage Data</h2>
+    <p id="output"></p>
+
+    <a href="./localStorage.html">Back</a>
+    <script>
+      var output = document.getElementById("output");
+
+      var result = JSON.parse(sessionStorage.getItem("myInfo"));
+      console.log(result);
+      output.innerText =
+        result.name + " | " + result.email + " | " + result.mobile;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+Assignment Time
+User enter marks in Percentage
+mark more than 80 ---> Distinction
+mark 70-80 ----> First Division
+mark 60-70 ----> Second Division
+mark 50-60 ----> Third Division
+less than 50 ---> Fail

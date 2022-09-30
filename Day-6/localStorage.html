@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Storage</title>
+  </head>
+  <body>
+    <h1>Web Storage</h1>
+    <ul>
+      <li>Local Storage</li>
+      <li>Session Storage</li>
+    </ul>
+    <hr />
+
+    Name: <input type="text" id="textbox" /> <br /><br />
+    Email: <input type="text" id="email" /> <br /><br />
+    Mobile: <input type="text" id="mobile" /> <br /><br />
+    <button>Add Data</button>
+    <button>Remove Data</button>
+    <a href="details.html">Storage Details</a>
+
+    <script>
+      // References
+      var input = document.getElementById("textbox");
+      var email = document.getElementById("email");
+      var mobile = document.getElementById("mobile");
+
+      var btn = document.querySelector("button");
+      var btn1 = document.querySelectorAll("button")[1];
+
+      btn.onclick = storeData;
+      btn1.onclick = removeData;
+
+      function storeData() {
+        // console.log("Web Storage Concepts");
+
+        // let data = input.value;
+        let data = {
+          name: input.value,
+          email: email.value,
+          mobile: mobile.value,
+        };
+        console.log(data);
+
+        sessionStorage.setItem("myInfo", JSON.stringify(data));
+
+        input.value = "";
+      }
+
+      function removeData() {
+        sessionStorage.removeItem("myInfo");
+      }
+    </script>
+  </body>
+</html>
